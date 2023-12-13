@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SyncDreamer: Generating Multiview-consistent Images from a Single-view Image</title>
+    <title>UniDream: Unifying Diffusion Priors for Relightable Text-to-3D Generation</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,41 +16,52 @@
     <script src="js/google-code-prettify/prettify.js"></script> -->
   </head>
 
+
   <!-- cover -->
   <section>
     <div class="jumbotron text-center mt-0">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2>SyncDreamer: Generating Multiview-consistent Images <br> from a Single-view Image
+            <h2>UniDream: Unifying Diffusion Priors for Relightable Text-to-3D Generation
             </h2>
             <h4 style="color:#5a6268;">Arxiv 2023 </h4>
             <hr>
             <h6>
-                <a href="https://xxx/" target="_blank">xxx</a><sup>1,2</sup></h6>
+                <a href="" target="_blank">Zexiang Liu</a><sup>1*</sup>
+                <a href="" target="_blank">Yangguang Li</a><sup>1*</sup>
+                <a href="" target="_blank">Youtian Lin</a><sup>1*</sup>
+                <a href="" target="_blank">Xin Yu</a><sup>2</sup>
+                <a href="" target="_blank">Sida Peng</a><sup>3</sup>
+                <a href="" target="_blank">Yuan-Chen Guo</a><sup>4,1</sup>
+                <a href="" target="_blank">Yan-Pei Cao</a><sup>1</sup>
+                <a href="" target="_blank">Xiaojuan Qi</a><sup>2</sup>
+                <a href="" target="_blank">Xiaoshui Huang</a><sup>5</sup>
+                <a href="" target="_blank">Ding Liang</a><sup>1</sup>
+                <a href="" target="_blank">Wanli Ouyang</a><sup>5</sup>
+            </h6>
+
             <p>
-                <sup>1</sup>The University of Hong Kong &nbsp;&nbsp;
-                <sup>2</sup>Tencent Games&nbsp;&nbsp;&nbsp;&nbsp;
-                <sup>3</sup>University of Pennsylvania &nbsp;&nbsp;&nbsp;&nbsp;
-                <sup>4</sup>Texas A&M University
+                <sup>1</sup>VAST &nbsp;&nbsp;
+                <sup>2</sup>The University of Hong Kong&nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>3</sup>Zhejiang University &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>4</sup>Tsinghua University &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>5</sup>Shanghai AI Laboratory
+
+            </p>
+            <p>
+                <sup></sup>* Equal contributions
+
             </p>
 
             <div class="row justify-content-center">
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2309.03453" role="button"  target="_blank">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
                     <i class="fa fa-file"></i> Paper</a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/liuyuan-pal/SyncDreamer" role="button"  target="_blank">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
                     <i class="fa fa-github-alt"></i> Code </a> </p>
-              </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://connecthkuhk-my.sharepoint.com/:f:/g/personal/yuanly_connect_hku_hk/EjYHbCBnV-VPjBqNHdNulIABq9sYAEpSz4NPLDI72a85vw" role="button"  target="_blank">
-                    <i class="fa fa-database"></i> Model </a> </p>
-              </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://huggingface.co/spaces/liuyuan-pal/SyncDreamer" role="button"  target="_blank">
-                    <i class="fa fa-desktop"></i> Live Demo </a> </p>
               </div>
             </div>
           </div>
@@ -67,62 +78,10 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-            <h6 style="color:#8899a5"> SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss. </h6>
-
-              <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                  <source src="video/teaser.mp4" type="video/mp4">
-              </video>
-
-			        <br>
-
+            <h6 style="color:#8899a5"> 
+            </h6>
           <p class="text-left">
-            In this paper, we present a novel diffusion model called SyncDreamer that generates multiview-consistent images from a single-view image. Using pretrained large-scale 2D diffusion models, recent work Zero123 demonstrates the ability to generate plausible novel views from a single-view image of an object. However, maintaining consistency in geometry and colors for the generated images remains a challenge. To address this issue, we propose a synchronized multiview diffusion model that models the joint probability distribution of multiview images, enabling the generation of multiview-consistent images in a single reverse process. SyncDreamer synchronizes the intermediate states of all the generated images at every step of the reverse process through a 3D-aware feature attention mechanism that correlates the corresponding features across different views. Experiments show that SyncDreamer generates images with high consistency across different views, thus making it well-suited for various 3D generation tasks such as novel-view-synthesis, text-to-3D, and image-to-3D.
-          </p>
-
-          
-          <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-            <source src="video/progress_low.mp4" type="video/mp4">
-        </video>
-
-        <p class="text-center">
-          Reverse process of SyncDreamer's multiview diffusion.
-        </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h2>Results on the Google Scanned Object dataset</h2>
-            <hr style="margin-top:0px">
-            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="video/gso.mp4" type="video/mp4">
-            </video>
-          <p class="text-left">
-            
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h2>Text to image to 3D model</h2>
-            <hr style="margin-top:0px">
-            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="video/t2i.mp4" type="video/mp4">
-            </video>
-
-          <p class="text-left">
-
+            Recent advancements in text-to-3D generation technology have significantly advanced the conversion of textual descriptions into imaginative well-geometrical and finely textured 3D objects. Despite these developments, a preva- lent limitation arises from the use of RGB data in diffusion or reconstruction models, which often results in models with inherent lighting and shadows effects that detract from their realism, thereby limiting their usability in applications that demand accurate relighting capabilities. To bridge this gap, we present UniDream, a text-to-3D generation framework by incorporating unified diffusion priors. Our approach consists of three main components: (1) a dual-phase train- ing process to get albedo-normal aligned multi-view diffu- sion and reconstruction models, (2) a progressive genera- tion procedure for geometry and albedo-textures based on Score Distillation Sample (SDS) using the trained recon- struction and diffusion models, and (3) an innovative appli- cation of SDS for finalizing PBR generation while keeping a fixed albedo based on Stable Diffusion model. Extensive evaluations demonstrate that UniDream surpasses existing methods in generating 3D objects with clearer albedo tex- tures, smoother surfaces, enhanced realism, and superior relighting capabilities.
           </p>
         </div>
       </div>
@@ -130,38 +89,20 @@
   </section>
   <br>
   
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h2>2D design to 3D model</h2>
-            <hr style="margin-top:0px">
-            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="video/drawings.mp4" type="video/mp4">
-            </video>
-
-          <p class="text-center">
-              SyncDreamer enables generating 3D models from 2D designs and hand drawings including skectches, Chinese ink paintings, oil paintings and so on.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
 
   
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-            <h2>Multiple instance generation</h2>
+            <h2>Method</h2>
             <hr style="margin-top:0px">
-            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="video/multiple.mp4" type="video/mp4">
-            </video>
-
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <img src="static/image/pipeline.png" alt="ant" width="800" height="400" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
           <p class="text-center">
-            Given the same single-view image, SynDreame allows generating different instances using different random seeds.
+              Overview of UniDream. Left: the multi-view diffusion model generates multi-view images based on input text. Middle: first, four view albedo maps obtain 3D prior by the reconstruction model, and then the multi-view diffusion model performs SDS optimization based on the 3D prior to generate a 3D object with albedo texture. Right: using Stable Diffusion model to generate PBR material.</a>.
           </p>
         </div>
       </div>
@@ -169,25 +110,460 @@
   </section>
   <br>
 
-  
-  <section>
-    <div class="container">
-      <div class="row">
+  <style>
+    .render_wrapper {
+        position: relative;
+        height: 350px;
+    }
+    .external-link {
+    color: #ffffff !important; 
+    background-color: rgb(18, 20, 23) !important;
+    border-radius: 20px !important;
+    font-size: 15px !important;
+    }
+
+    .external-link .icon {
+    font-size: 30px !important;
+    }
+
+    .external-link:hover {
+    background-color: #555555 !important;
+    }
+
+    .conference {
+    font-family: 'Google Sans', sans-serif;
+    color: hsl(240, 2%, 10%) !important;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    }
+
+    .results-carousel textbox {
+    font-size: 7px; 
+    font-family: 'Google Sans', cursive, sans-serif;
+    color: hsl(321, 56%, 56%) !important;
+    }
+    .dialog-box {
+        background-color: rgba(255, 255, 255, 0.5); 
+        border: 1px solid rgba(96, 85, 85, 0.494);
+        padding: 10px; 
+        border-radius: 15px; 
+        z-index: 1000; 
+        font-size: 14px; 
+        font-family: 'Comic Sans MS', cursive, sans-serif; 
+        color: hsl(322, 33%, 22%) !important;
+        font-weight: bold; 
+    }
+    .author-block a {
+    color: hsl(245, 45%, 66%) !important;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    }
+
+    .affiliation-index {
+        font-size: 0.8em;
+        vertical-align: super; 
+        color: inherit;
+    }
+
+    .affiliations {
+        
+        font-size: 0.9em;
+        margin-top: 10px;
+        white-space: nowrap;  
+    }
+
+    .affiliations sup {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .formal-title {
+    color: black;
+    font-family: "Times New Roman", Times, serif; 
+    margin-bottom: 30px; 
+    }
+    #thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .thumbnail-item {
+    flex-basis: calc(50% - 10px); 
+    margin: 5px;
+    }
+    #button-container {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    .page-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    }
+
+    .page-button:hover {
+    background-color: #009eb3;
+    }
+    .highlight {
+        font-weight: bold;
+        color:hsl(245, 45%, 66%)
+    }
+
+    .full-width-video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        pointer-events: none; 
+    }
+
+
+    .methods-row {
+        display: flex; 
+        justify-content: space-between; 
+        margin-bottom: 10px;
+    }
+
+    .method-name {
+        flex: 1;  
+        text-align: center; 
+        font-weight: bold;
+    }
+
+    .outer-container {
+        width: 80%;  
+        margin: auto;
+    }
+
+
+
+  </style>
+
+  <!-- Import the component -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+<body>
+
+
+<!-- Video Gallery -->
+<section class="section hero">
+<div class="container is-max-desktop" id="videoGallery1" style="max-width: 1450px">
+    <div class="sticky-top" style="background-color: transparent">
+      <center>
         <div class="col-12 text-center">
-            <h2>More results</h2>
+            <h2>Results</h2>
             <hr style="margin-top:0px">
-            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="video/more_results.mp4" type="video/mp4">
-            </video>
-
+            <td width="75%" valign="middle">
           <p class="text-center">
-              Test images are downloaded from the Internet and some of them are from <a href="https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5" target="_blank">Genshin Impact Wiki</a>.
+              Each case has 7 results, which are the results comparison of DreamFusion, Magic3D, ProlificDreamer, MVDream, UniDream-PBR, UniDream-Relighting-I, and UniDream-Relighting-II. UniDream-PBR is PBR->Normal->Albedo->Roughness->Metallic from left to right. UniDream-Relighting is the result of replacing the environment map for relighting, which is PBR->Diffuse Color->Specular Color->Diffuse Light->Specular Light from left to right</a>.
           </p>
         </div>
-      </div>
+      </center>
     </div>
-  </section>
-  <br>
+    <div id="thumbnails" class="card-columns captioned_videos list"></div>
+    <div id="button-container">
+        <button id="previousPage" class="page-button">Previous Page</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage" class="page-button">Next Page</button>
+    </div>
+</div>
+</section>
+
+<!-- Video Gallery -->
+<section class="section hero">
+    <div class="container is-max-desktop" id="videoGallery2" style="max-width: 1450px">
+        <div class="sticky-top" style="background-color: transparent">
+          <center>
+            <div class="col-12 text-center">
+                <h2>Results</h2>
+                <hr style="margin-top:0px">
+                <td width="75%" valign="middle">
+              <p class="text-center">
+                  BR->Normal->Albedo->Roughness->Metallic for reference</a>.
+              </p>
+            </div>
+          </center>
+        </div>
+        
+        <div id="thumbnails" class="card-columns captioned_videos list"></div>
+        <div id="button-container">
+            <button id="previousPage" class="page-button">Previous Page</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage" class="page-button">Next Page</button>
+        </div>
+    </div>
+</section>
+
+<!-- Video Gallery -->
+<section class="section hero">
+    <div class="container is-max-desktop" id="videoGallery3" style="max-width: 1450px">
+        <div class="sticky-top" style="background-color: transparent">
+          <center>
+            <div class="col-12 text-center">
+                <h2>Results</h2>
+                <hr style="margin-top:0px">
+                <td width="75%" valign="middle">
+              <p class="text-center">
+                  BR->Normal->Albedo->Roughness->Metallic for reference</a>.
+              </p>
+            </div>
+          </center>
+        </div>
+        <div id="thumbnails" class="card-columns captioned_videos list"></div>
+        <div id="button-container">
+            <button id="previousPage" class="page-button">Previous Page</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage" class="page-button">Next Page</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    
+    function createVideoGallery(options) {
+        var { containerId, modelPaths, perPage, mode, componentName, column} = options;
+        const thumbnails = document.getElementById(containerId).querySelector("#thumbnails");
+        const pageInfoElem = document.getElementById(containerId).querySelector("#pageInfo");
+        const nextPageElem = document.getElementById(containerId).querySelector("#nextPage");
+        const prevPageElem = document.getElementById(containerId).querySelector("#previousPage");
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        // modelPaths = shuffleArray(modelPaths);
+
+        let currentDisplayCount = 0;
+        const totalPageCount = Math.ceil(modelPaths.length / perPage);
+        let currentPage = 1;
+
+        function updatePageInfo() {
+            pageInfoElem.textContent = `Page ${currentPage} of ${totalPageCount}`;
+        }
+
+        function displayPage(startIndex) {
+            $(thumbnails).fadeOut(300, function() {
+                thumbnails.innerHTML = "";
+                const endIndex = Math.min(startIndex + perPage, modelPaths.length);
+                var width = 1400-32.5;
+                var height = 300
+                
+                for (let i = startIndex; i < endIndex; i++) {
+                    var outer = document.createElement("DIV");
+                    outer.classList = "thumbnail outer card";
+                    outer.id = 'm' + i;
+                    if (column == 1) outer.setAttribute("style", "background-color: transparent; flex-basis: calc(100% - 10px);");
+                    else outer.setAttribute("style", "background-color: transparent; flex-basis: calc(50% - 10px);");
+                    
+                    var inner = document.createElement("DIV");
+                    inner.classList = "inner card-body";
+
+                    let modelPath = modelPaths[i];
+                    let caption = modelPath.split('/').slice(2).join('/').replace(".mp4", "").replaceAll("_", " ");
+
+                    let captionShort = caption;
+                    var component = document.createElement(componentName);
+                    component.id = 'm' + i;
+                    component.src = modelPath;
+                    if (mode == 'video') {
+                        component.loop = true;
+                        component.playsinline = true;
+                        component.muted = true;
+                        
+                        component.autoplay = true;
+                        component.controls = false;
+                        component.width = width;
+                        component.height = height;
+                        component.classList = "video lazy";
+                        component.onmouseover = component.pause;
+                        component.onmouseout = component.play;
+                    }
+                    inner.appendChild(component);
+
+                    var componentCaption = document.createElement("h6");
+                    componentCaption.classList = "caption";
+                    componentCaption.title = caption;
+                    
+                    componentCaption.style.fontFamily = 'Comic Sans MS';
+                    componentCaption.style.fontSize = "15px";
+                    componentCaption.style.marginTop = "1px";
+                    componentCaption.style.marginBottom = "20px";
+                    componentCaption.style.textAlign = "center";
+
+
+                    componentCaption.style.height = "50px";  
+                    componentCaption.style.overflow = "hidden";
+
+
+                    componentCaption.style.display = "flex";
+                    componentCaption.style.justifyContent = "center";
+                    componentCaption.style.alignItems = "center";
+                    var a = document.createElement("a");
+                    a.style = "color: black";
+                    a.href = modelPath;
+                    a.appendChild(document.createTextNode(captionShort));
+                    componentCaption.appendChild(a);
+                    inner.appendChild(componentCaption);
+
+                    outer.appendChild(inner);
+                    thumbnails.appendChild(outer);
+                }
+
+                currentDisplayCount = endIndex;
+                updatePageInfo();
+                nextPageElem.disabled = currentPage >= totalPageCount;
+                prevPageElem.disabled = currentPage <= 1;
+
+                $(thumbnails).fadeIn(1000);
+            });
+        }
+
+        nextPageElem.addEventListener("click", function() {
+            if (currentPage < totalPageCount) {
+                currentPage++;
+                displayPage((currentPage - 1) * perPage);
+                updatePageInfo();
+            }
+            nextPageElem.disabled = currentPage >= totalPageCount;
+            prevPageElem.disabled = currentPage <= 1;
+        });
+
+        prevPageElem.addEventListener("click", function() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayPage((currentPage - 1) * perPage);
+                updatePageInfo();
+            }
+            nextPageElem.disabled = currentPage >= totalPageCount;
+            prevPageElem.disabled = currentPage <= 1;
+        });
+
+        displayPage(0);
+        updatePageInfo();
+    }
+</script>
+
+<script>
+    
+    const modelPaths_comparison = [
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(DreamFusion).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(Magic3D).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(MVDream).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(ProlificDreamer).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(UniDream-PBR).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(UniDream-Relighting-I).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(UniDream-Relighting-II).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(DreamFusion).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(Magic3D).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(MVDream).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(ProlificDreamer).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(UniDream-PBR).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(UniDream-Relighting-I).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(UniDream-Relighting-II).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(DreamFusion).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(Magic3D).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(MVDream).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(ProlificDreamer).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(UniDream-PBR).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(UniDream-Relighting-I).mp4",
+    "static/unidream_fig1_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(UniDream-Relighting-II).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(DreamFusion).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(Magic3D).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(MVDream).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(ProlificDreamer).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(UniDream-PBR).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(UniDream-Relighting-I).mp4",
+    "static/unidream_fig1_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(UniDream-Relighting-II).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(DreamFusion).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(Magic3D).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(MVDream).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(ProlificDreamer).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(UniDream-PBR).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(UniDream-Relighting-I).mp4",
+    "static/unidream_fig1_demo/Darth_Vader_helmet,_highly_detailed(UniDream-Relighting-II).mp4",
+    ];
+
+    const modelPaths_comparison_texture = [
+    "static/unidream_fig4_demo/a DSLR photo of a group of dogs playing poker.mp4",
+    "static/unidream_fig4_demo/a pig wearing a back pack.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a terracotta bunny.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a kitten standing on top of a giant tortoise.mp4",
+    "static/unidream_fig4_demo/a zoomed out DSLR photo of a red rotary telephone.mp4",
+    "static/unidream_fig4_demo/Viking axe fantasy weapon blender 8k HD.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of edible typewriter made out of vegetables.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a football helmet.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of an overstuffed pastrami sandwich.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a lion reading the newspaper.mp4",
+    "static/unidream_fig4_demo/a statue of angel blender.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a humanoid robot using a laptop.mp4",
+    "static/unidream_fig4_demo/a DSLR photo of a plush triceratops toy studio lighting high resolution.mp4",
+    "static/unidream_fig4_demo/a wide angle zoomed out DSLR photo of a skiing penguin wearing a puffy jacket.mp4",
+    "static/unidream_fig4_demo/Daenerys Targaryen from game of throne, full body, blender 3d, artstation and behance, Disney Pixar, Mobile game character, clash royale, cute.mp4",
+    ];
+
+    const modelPaths_gallary = [
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(Fantasia3D-PBR).mp4",
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_frog_wearing_a_sweater(UniDream-PBR).mp4",
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(Fantasia3D-PBR).mp4",
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_steam_engine_train,_high_resolution(UniDream-PBR).mp4",
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(Fantasia3D-PBR).mp4",
+    "static/unidream_fig7_demo/a_DSLR_photo_of_a_tiger_made_out_of_yarn(UniDream-PBR).mp4",
+    "static/unidream_fig7_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(Fantasia3D-PBR).mp4",
+    "static/unidream_fig7_demo/a_zoomed_out_DSLR_photo_of_a_3d_model_of_an_adorable_cottage_with_a_thatched_roof(UniDream-PBR).mp4",
+    "static/unidream_fig7_demo/Darth_Vader_helmet,_highly_detailed(Fantasia3D-PBR).mp4",
+    "static/unidream_fig7_demo/Darth_Vader_helmet,_highly_detailed(UniDream-PBR).mp4",
+    ]
+    
+    createVideoGallery({
+        containerId: "videoGallery1",
+        modelPaths: modelPaths_comparison_texture,  
+        perPage: 5,
+        mode: "video",
+        componentName: "VIDEO",
+        column: 1,
+    });
+
+    createVideoGallery({
+        containerId: "videoGallery2",
+        modelPaths: modelPaths_comparison,  
+        perPage: 7,
+        mode: "video",
+        componentName: "VIDEO",
+        column: 1,
+        
+    });
+
+    createVideoGallery({
+        containerId: "videoGallery3",
+        modelPaths: modelPaths_gallary,  
+        perPage: 2,
+        mode: "video",
+        componentName: "VIDEO",
+        column: 1,
+        
+    });
+
+</script>
 
 
   <!-- citing -->
@@ -197,10 +573,10 @@
           <h3>Citation</h3>
           <hr style="margin-top:0px">
               <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-<code>@article{liu2023syncdreamer,
-    title={SyncDreamer: Learning to Generate Multiview-consistent Images from a Single-view Image},
-    author={Liu, Yuan and Lin, Cheng and Zeng, Zijiao and Long, Xiaoxiao and Liu, Lingjie and Komura, Taku and Wang, Wenping},
-    journal={arXiv preprint arXiv:2309.03453},
+<code>@article{liu2023unidream,
+    title={UniDream: Unifying Diffusion Priors for Relightable Text-to-3D Generation},
+    author={Zexiang Liu, Yangguang Li, Youtian Lin, Xin Yu, Sida Peng, Yuan-Chen Guo, Yan-Pei Cao, Xiaojuan Qi, Xiaoshui Huang, Ding Liang, Wanli Ouyang},
+    journal={arXiv preprint arXiv:xxxx},
     year={2023}
 }</code>
               </pre>
@@ -212,6 +588,7 @@
   <footer class="text-center" style="margin-bottom:10px">
       Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
   </footer>
+
 
 </body>
 </html>
