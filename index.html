@@ -29,16 +29,16 @@
             <hr>
             <h6>
                 <a href="" target="_blank">Zexiang Liu</a><sup>1*</sup>
-                <a href="" target="_blank">Yangguang Li</a><sup>1*</sup>
-                <a href="" target="_blank">Youtian Lin</a><sup>1*</sup>
-                <a href="" target="_blank">Xin Yu</a><sup>2</sup>
-                <a href="" target="_blank">Sida Peng</a><sup>3</sup>
-                <a href="" target="_blank">Yuan-Chen Guo</a><sup>4,1</sup>
-                <a href="" target="_blank">Yan-Pei Cao</a><sup>1</sup>
-                <a href="" target="_blank">Xiaojuan Qi</a><sup>2</sup>
-                <a href="" target="_blank">Xiaoshui Huang</a><sup>5</sup>
-                <a href="" target="_blank">Ding Liang</a><sup>1</sup>
-                <a href="" target="_blank">Wanli Ouyang</a><sup>5</sup>
+                <a href="https://scholar.google.com/citations?user=a7AMvgkAAAAJ&hl=zh-CN" target="_blank">Yangguang Li</a><sup>1*</sup>
+                <a href="https://scholar.google.com/citations?user=VhhHLhIAAAAJ&hl=en" target="_blank">Youtian Lin</a><sup>1*</sup>
+                <a href="https://scholar.google.com/citations?user=JX8kSoEAAAAJ&hl=zh-CN" target="_blank">Xin Yu</a><sup>2</sup>
+                <a href="https://pengsida.net/" target="_blank">Sida Peng</a><sup>3</sup>
+                <a href="https://scholar.google.com/citations?user=b7ZJV9oAAAAJ&hl=en" target="_blank">Yuan-Chen Guo</a><sup>4,1</sup>
+                <a href="https://yanpei.me/" target="_blank">Yan-Pei Cao</a><sup>1</sup>
+                <a href="https://xjqi.github.io/" target="_blank">Xiaojuan Qi</a><sup>2</sup>
+                <a href="https://xiaoshuihuang.github.io/" target="_blank">Xiaoshui Huang</a><sup>5</sup>
+                <a href="https://scholar.google.com/citations?user=Dqjnn0gAAAAJ&hl=zh-CN" target="_blank">Ding Liang</a><sup>1</sup>
+                <a href="https://wlouyang.github.io/" target="_blank">Wanli Ouyang</a><sup>5</sup>
             </h6>
 
             <p>
@@ -60,7 +60,7 @@
                     <i class="fa fa-file"></i> Paper</a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/YG256Li/UniDream" role="button"  target="_blank">
                     <i class="fa fa-github-alt"></i> Code </a> </p>
               </div>
             </div>
@@ -98,10 +98,10 @@
             <h2>Method</h2>
             <hr style="margin-top:0px">
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <img src="static/image/pipeline.png" alt="ant" width="800" height="400" style="border-style: none">
+              <img src="static/image/pipeline.png" alt="ant" width="900" height="400" style="border-style: none">
             </td>
             <td width="75%" valign="middle">
-          <p class="text-center">
+          <p class="text-left">
               Overview of UniDream. Left: the multi-view diffusion model generates multi-view images based on input text. Middle: first, four view albedo maps obtain 3D prior by the reconstruction model, and then the multi-view diffusion model performs SDS optimization based on the 3D prior to generate a 3D object with albedo texture. Right: using Stable Diffusion model to generate PBR material.</a>.
           </p>
         </div>
@@ -268,11 +268,11 @@
     <div class="sticky-top" style="background-color: transparent">
       <center>
         <div class="col-12 text-center">
-            <h2>Results</h2>
+            <h2>Example Generated Results</h2>
             <hr style="margin-top:0px">
             <td width="75%" valign="middle">
           <p class="text-center">
-              Each case has 7 results, which are the results comparison of DreamFusion, Magic3D, ProlificDreamer, MVDream, UniDream-PBR, UniDream-Relighting-I, and UniDream-Relighting-II. UniDream-PBR is PBR->Normal->Albedo->Roughness->Metallic from left to right. UniDream-Relighting is the result of replacing the environment map for relighting, which is PBR->Diffuse Color->Specular Color->Diffuse Light->Specular Light from left to right</a>.
+              PBR->Normal->Albedo->Roughness->Metallic for reference</a>.
           </p>
         </div>
       </center>
@@ -292,11 +292,11 @@
         <div class="sticky-top" style="background-color: transparent">
           <center>
             <div class="col-12 text-center">
-                <h2>Results</h2>
+                <h2>Methods Comparison Results</h2>
                 <hr style="margin-top:0px">
                 <td width="75%" valign="middle">
               <p class="text-center">
-                  BR->Normal->Albedo->Roughness->Metallic for reference</a>.
+              Each case has 7 results, which are the results comparison of DreamFusion, Magic3D, ProlificDreamer, MVDream, UniDream-PBR, UniDream-Relighting-I, and UniDream-Relighting-II. UniDream-PBR is PBR->Normal->Albedo->Roughness->Metallic from left to right. UniDream-Relighting is the result of replacing the environment map for relighting, which is PBR->Diffuse Color->Specular Color->Diffuse Light->Specular Light from left to right</a>.
               </p>
             </div>
           </center>
@@ -317,7 +317,7 @@
         <div class="sticky-top" style="background-color: transparent">
           <center>
             <div class="col-12 text-center">
-                <h2>Results</h2>
+                <h2>PBR Comparison Results</h2>
                 <hr style="margin-top:0px">
                 <td width="75%" valign="middle">
               <p class="text-center">
