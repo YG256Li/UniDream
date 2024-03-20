@@ -1,5 +1,5 @@
 # UniDream
-[Arxiv23] UniDream: Unifying Diffusion Priors for Relightable Text-to-3D Generation
+UniDream: Unifying Diffusion Priors for Relightable Text-to-3D Generation
 ## 🏠 <a href="https://yg256li.github.io/UniDream/" target="_blank">Project Page</a> | <a href="https://arxiv.org/abs/2312.08754" target="_blank">Paper</a>
 
 ![img:teaser](image/teaser.png)
