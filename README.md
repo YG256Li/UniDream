@@ -12,3 +12,14 @@ Abstract: Recent advancements in text-to-3D generation technology have significa
 
 ## 🤝 Codebase
 The codebase of UniDream is coming soon.
+
+```
+@inproceedings{liu2024unidream,
+  title={Unidream: Unifying diffusion priors for relightable text-to-3d generation},
+  author={Liu, Zexiang and Li, Yangguang and Lin, Youtian and Yu, Xin and Peng, Sida and Cao, Yan-Pei and Qi, Xiaojuan and Huang, Xiaoshui and Liang, Ding and Ouyang, Wanli},
+  booktitle={European Conference on Computer Vision},
+  pages={74--91},
+  year={2024},
+  organization={Springer}
+}
+```
